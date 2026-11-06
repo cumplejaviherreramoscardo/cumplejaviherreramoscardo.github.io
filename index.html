@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cumple Javi Herrera</title>
+<meta name="description" content="Save the date: viernes 2 de abril de 2027, 19:30, Restaurante Bamboleo, Aravaca (Madrid).">
+<meta name="robots" content="noindex, nofollow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cumple Javi Herrera">
+<meta property="og:description" content="Viernes 2 de abril de 2027 · 19:30 · Restaurante Bamboleo, Aravaca. Reserva la fecha y dinos si vienes.">
+<meta property="og:url" content="https://manuelfernandezjaquete-max.github.io/cumple-javi/">
+<meta property="og:image" content="https://manuelfernandezjaquete-max.github.io/cumple-javi/og.jpg">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Spectral:ital,wght@0,300;0,400;1,400&display=swap">
+<style>
+  /* Layout: two columns — photo left, a quiet stack of facts right; one column on phones */
+  :root{
+    --paper:#E9EDE6;
+    --ink:#16261C;
+    --muted:#63756A;
+    --line:#CFD8CB;
+    --gold:#B0791A;
+    --gold-ink:#FFFFFF;
+    --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+    --body:"Spectral",Georgia,"Times New Roman",serif;
+    color-scheme:light;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#0D1510;
+      --ink:#E7EDE4;
+      --muted:#93A598;
+      --line:#26332B;
+      --gold:#DDA73F;
+      --gold-ink:#13100A;
+      color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0D1510;
+    --ink:#E7EDE4;
+    --muted:#93A598;
+    --line:#26332B;
+    --gold:#DDA73F;
+    --gold-ink:#13100A;
+    color-scheme:dark;
+  }
+
+  html{background:var(--paper)}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--body);
+    font-size:16px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%}
+  [hidden]{display:none!important}
+  *,*::before,*::after{box-sizing:border-box}
+
+  .page{
+    max-width:980px;
+    margin:0 auto;
+    padding-left:max(16px,env(safe-area-inset-left,0px));
+    padding-right:max(16px,env(safe-area-inset-right,0px));
+    padding-block:30px 64px;
+  }
+
+  .eyebrow{
+    font-family:var(--display);
+    font-weight:600;
+    font-stretch:106%;
+    text-transform:uppercase;
+    letter-spacing:.26em;
+    font-size:.66rem;
+    color:var(--muted);
+    margin:0;
+  }
+
+  .poster{
+    display:grid;
+    grid-template-columns:minmax(0,.78fr) minmax(0,1fr);
+    gap:clamp(26px,5vw,60px);
+    align-items:start;
+    padding-block:clamp(26px,5vw,46px) 0;
+  }
+  @media (max-width:800px){
+    .poster{grid-template-columns:minmax(0,1fr);gap:30px}
+  }
+
+  .plate{margin:0;min-width:0}
+  .plate img{
+    display:block;
+    width:100%;
+    max-width:100%;
+    aspect-ratio:3/4;
+    object-fit:cover;
+    object-position:50% 40%;
+  }
+
+  .stack{display:flex;flex-direction:column;gap:26px;min-width:0}
+
+  .name{
+    margin:6px 0 0;
+    font-family:var(--display);
+    font-weight:800;
+    font-stretch:112%;
+    text-transform:uppercase;
+    font-size:clamp(2.7rem,7.6vw,4.4rem);
+    line-height:.9;
+    letter-spacing:-.015em;
+    text-wrap:balance;
+  }
+
+  .facts{margin:0;display:flex;flex-direction:column}
+  .facts div{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:baseline;
+    gap:4px 16px;
+    padding-block:13px;
+    border-top:1px solid var(--line);
+  }
+  .facts div:last-child{border-bottom:1px solid var(--line)}
+  .facts dt{
+    flex:0 0 5.2rem;
+    font-family:var(--display);
+    font-weight:600;
+    font-stretch:104%;
+    text-transform:uppercase;
+    letter-spacing:.16em;
+    font-size:.6rem;
+    color:var(--muted);
+  }
+  .facts dd{margin:0;min-width:0;font-size:1.02rem}
+  .facts dd a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
+  .facts dd a:hover{border-bottom-color:var(--gold)}
+  .facts dd a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+  .facts .sub{display:block;font-size:.88rem;color:var(--muted)}
+
+  .cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    padding:14px 32px;
+    border-radius:999px;
+    background:var(--gold);
+    color:var(--gold-ink);
+    font-family:var(--display);
+    font-weight:700;
+    font-stretch:104%;
+    font-size:1rem;
+    text-decoration:none;
+  }
+  .btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+  .quiet{
+    font-family:var(--display);
+    font-weight:600;
+    font-stretch:104%;
+    font-size:.84rem;
+    color:var(--muted);
+    text-decoration:none;
+    border-bottom:1px solid var(--line);
+  }
+  .quiet:hover{color:var(--ink);border-bottom-color:var(--gold)}
+  .quiet:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+  .note{
+    margin:0;
+    max-width:46ch;
+    font-size:.92rem;
+    color:var(--muted);
+  }
+
+  .countdown{
+    margin:0;
+    font-family:var(--display);
+    font-weight:600;
+    font-stretch:106%;
+    text-transform:uppercase;
+    letter-spacing:.2em;
+    font-size:.64rem;
+    color:var(--muted);
+    font-variant-numeric:tabular-nums;
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <p class="eyebrow">Save the date</p>
+
+  <main class="poster">
+    <figure class="plate">
+      <img src="foto.jpg" alt="Javi y su novia en un pinar de la sierra de Madrid, un d&iacute;a de sol." width="1500" height="2000">
+    </figure>
+
+    <div class="stack">
+      <h1 class="name">Cumple<br>Javi Herrera</h1>
+
+      <dl class="facts">
+        <div>
+          <dt>Fecha</dt>
+          <dd>Viernes 2 de abril de 2027</dd>
+        </div>
+        <div>
+          <dt>Hora</dt>
+          <dd>19:30</dd>
+        </div>
+        <div>
+          <dt>Lugar</dt>
+          <dd>
+            <a href="https://share.google/lZuQ9PgJjFZxDduNF" target="_blank" rel="noopener">Restaurante Bamboleo</a>
+            <span class="sub">Aravaca, Madrid &middot; ver en Maps</span>
+          </dd>
+        </div>
+        <div>
+          <dt>Aparcar</dt>
+          <dd>
+            <a href="https://share.google/YAbZ3GlFodYGgiYeC" target="_blank" rel="noopener">Laravaca Car Wash</a>
+            <span class="sub">Gratis a partir de las 16:30</span>
+          </dd>
+        </div>
+      </dl>
+
+      <div class="cta">
+        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSctRbqPun9t6S1JCXMEQuPlQgB-s9RBTXdPTb_RPVekXSqhyQ/viewform" target="_blank" rel="noopener">Registrarse</a>
+        <a class="quiet" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Cumple%20Javi%20Herrera&amp;dates=20270402T173000Z/20270402T213000Z&amp;details=Restaurante%20Bamboleo%2C%20Aravaca%20(Madrid).&amp;location=Restaurante%20Bamboleo%2C%20Aravaca%2C%20Madrid" target="_blank" rel="noopener">A&ntilde;adir al calendario</a>
+      </div>
+
+      <p class="note">Nombre y apellidos, si vienes con acompa&ntilde;ante y si tienes alguna intolerancia. Treinta segundos.</p>
+
+      <p class="countdown" id="countdown">&mdash;</p>
+    </div>
+  </main>
+</div>
+
+<script>
+  (function () {
+    var party = new Date(2027, 3, 2);
+    var now = new Date();
+    var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    var days = Math.round((party - today) / 86400000);
+    var cd = document.getElementById("countdown");
+    if (days > 1) { cd.textContent = days + " días"; }
+    else if (days === 1) { cd.textContent = "Mañana"; }
+    else if (days === 0) { cd.textContent = "Hoy"; }
+    else { cd.hidden = true; }
+  })();
+</script>
+
+</body>
+</html>
