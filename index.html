@@ -97,9 +97,18 @@
     .poster{grid-template-columns:minmax(0,1fr);gap:30px}
   }
 
-  .plate{margin:0;min-width:0}
+  .plate{margin:0;min-width:0;position:relative}
+  /* bandera de Espana asomando por detras de la foto */
+  .plate::before{
+    content:"";
+    position:absolute;
+    inset:10px -10px -10px 10px;
+    background:linear-gradient(to bottom,#AA151B 0 25%,#F1BF00 25% 75%,#AA151B 75% 100%);
+  }
   .plate img{
     display:block;
+    position:relative;
+    z-index:1;
     width:100%;
     max-width:100%;
     height:auto;
@@ -210,7 +219,7 @@
     </figure>
 
     <div class="stack">
-      <h1 class="name">Cumple<br>Javi Herrera</h1>
+      <h1 class="name">Cumple<br>Javi</h1>
 
       <dl class="facts">
         <div>
@@ -224,15 +233,15 @@
         <div>
           <dt>Lugar</dt>
           <dd>
-            <a href="https://share.google/lZuQ9PgJjFZxDduNF" target="_blank" rel="noopener">Restaurante Bamboleo</a>
-            <span class="sub">Aravaca, Madrid &middot; ver en Maps</span>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Restaurante%20Bamboleo%2C%20Calle%20de%20Blanca%20de%20Castilla%2011%2C%2028023%20Madrid" target="_blank" rel="noopener">Restaurante Bamboleo</a>
+            <span class="sub">Blanca de Castilla 11 &middot; Aravaca, Madrid</span>
           </dd>
         </div>
         <div>
           <dt>Aparcar</dt>
           <dd>
-            <a href="https://share.google/YAbZ3GlFodYGgiYeC" target="_blank" rel="noopener">Laravaca Car Wash</a>
-            <span class="sub">Gratis a partir de las 16:30</span>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Laravaca%20Car%20Wash%2C%20Calle%20de%20Blanca%20de%20Castilla%202%2C%2028023%20Madrid" target="_blank" rel="noopener">Laravaca Car Wash</a>
+            <span class="sub">Gratis desde las 16:30 &middot; misma calle, n&ordm; 2</span>
           </dd>
         </div>
       </dl>
